@@ -1,13 +1,13 @@
 [
   {
     "name": "home",
-    "src": "images/server-wall.jpg",
+    "src": "images/adventures.jpg",
     "alt": "woman holding laptop standing by server room with glass wall"
   },
   {
     "name": "about",
-    "src": "images/mosaic.svg",
-    "alt": "purple and blue abstract background"
+    "src": "images/brick-wall.jpg",
+    "alt": "brick wall background"
   },
   {
     "name": "portfolio",

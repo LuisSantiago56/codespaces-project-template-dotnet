@@ -126,17 +126,17 @@ Open `/src/BlazorApp/wwwroot/sample-data/heroimages.json` and update images with
 [
   {
     // Home component
-    // section at top of the page, main image you will see when site loads (woman standing by server wall in sample)
+    // section at top of the page, main image you will see when site loads (man on top of a mountain in sample)
     "name": "home",
-    "src": "images/server-wall.jpg",
-    "alt": "woman holding laptop standing by server room with glass wall"
+    "src": "images/adventures.jpg",
+    "alt": "man on top of a mountain"
   },
   {
     // About me component
-    // background behind the detailed "about me" section (abstract mosaic in sample)
+    // background behind the detailed "about me" section (brick wall in sample)
     "name": "about",
-    "src": "images/mosaic.svg",
-    "alt": "purple and blue abstract background"
+    "src": "images/brick-wall.jpg",
+    "alt": "brick wall"
   },
   {
     // Portfolio component
@@ -147,7 +147,7 @@ Open `/src/BlazorApp/wwwroot/sample-data/heroimages.json` and update images with
   },
   {
     // Testing component
-    // image highted in left hand side of section (light bulb with notebook)
+    // image highted in left hand side of section (light bulb with notebook in sample)
     "name": "idea",
     "src": "images/ideas.jpg",
     "alt": "light bulb with notebook"
