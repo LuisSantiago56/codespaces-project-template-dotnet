@@ -144,6 +144,13 @@ Open `/src/BlazorApp/wwwroot/sample-data/heroimages.json` and update images with
     "name": "portfolio",
     "src": "images/design-desk.jpeg",
     "alt": "desktop with books and laptop"
+  },
+  {
+    // Testing component
+    // image highted in left hand side of section (light bulb with notebook)
+    "name": "idea",
+    "src": "images/ideas.jpg",
+    "alt": "light bulb with notebook"
   }
 ]
 ```

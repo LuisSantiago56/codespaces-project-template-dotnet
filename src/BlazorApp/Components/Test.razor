@@ -1,0 +1,36 @@
+<section class="light" id="test">
+    @if (hero is not null)
+    {
+        <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
+    }
+    <h2>This is the test section</h2>
+    <div style="background-color: white; width: 50%; padding: 4rem; margin: 3rem auto; text-align: center;">
+    @if (testing is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <p class="large">@testing.Description</p>
+        <hr />
+    }
+    </div>
+</section>
+
+@code {
+    [Parameter, EditorRequired]
+    public required HttpClient Http { get; set; }
+
+    [Parameter, EditorRequired]
+    public required HeroImageService HeroImageService { get; set; }
+
+    private Testing? testing;
+    private HeroImage? hero;
+
+    protected override async Task OnInitializedAsync()
+    {
+        testing = await Http.GetFromJsonAsync<Testing>("sample-data/testing.json");
+        hero = await HeroImageService.GetHeroAsync(img => img.Name is "idea");
+
+    }
+}
